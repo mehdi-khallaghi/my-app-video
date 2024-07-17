@@ -54,32 +54,32 @@ root.render(
 // }
 //---------------------install banner-------------------------------------
 
-// window.addEventListener("beforeinstallprompt", (e) => {  
-//   e.preventDefault();  
-//   let deferredPrompt = e;  
-//   let addBtn = document.getElementById('install_banner');  
-//   let yesBtn = document.getElementById('yes');  
-//   let noBtn = document.getElementById('no');  
+window.addEventListener("beforeinstallprompt", (e) => {  
+  e.preventDefault();  
+  let deferredPrompt = e;  
+  let addBtn = document.getElementById('install_banner');  
+  let yesBtn = document.getElementById('yes');  
+  let noBtn = document.getElementById('no');  
 
-//   addBtn.style.display = "block";  
+  addBtn.style.display = "block";  
 
-//   yesBtn.addEventListener("click", (e) => {  
-//     addBtn.style.display = "none";  
-//     deferredPrompt.prompt();  
-//     deferredPrompt.userChoice.then((choiceResult) => {  
-//       if (choiceResult.outcome === "accepted") {  
-//         console.log("کاربر پرومت نصب را پذیرفت");  
-//       } else {  
-//         console.log("کاربر پرومت نصب را رد کرد");  
-//       }  
-//       deferredPrompt = null;  
-//     });  
-//   });  
+  yesBtn.addEventListener("click", (e) => {  
+    addBtn.style.display = "none";  
+    deferredPrompt.prompt();  
+    deferredPrompt.userChoice.then((choiceResult) => {  
+      if (choiceResult.outcome === "accepted") {  
+        console.log("کاربر پرومت نصب را پذیرفت");  
+      } else {  
+        console.log("کاربر پرومت نصب را رد کرد");  
+      }  
+      deferredPrompt = null;  
+    });  
+  });  
 
-//   noBtn.addEventListener('click', (e) => {  
-//     addBtn.style.display = "none";  
-//   });  
-// });
+  noBtn.addEventListener('click', (e) => {  
+    addBtn.style.display = "none";  
+  });  
+});
 
 window.addEventListener("beforeinstallprompt", (e) => {
   console.log("رویداد beforeinstallprompt اتفاق افتاد");
