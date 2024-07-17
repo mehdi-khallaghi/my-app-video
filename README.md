@@ -2,4 +2,4 @@
 
 ## react project play-video
 
-## videolist-play.netlify.app
+## www.videolist-play.netlify.app
