@@ -13,11 +13,11 @@ import Users, { userSlice } from './features/Users';
 import useReducer from './features/Users';
 import movieRaducer from './features/movie'
 import * as ServiceWorkerRegistration from './serviceWorkerRegistration'
-import { register } from 'workbox-registration';  
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const rejester = register(); 
-ServiceWorkerRegistration.rejester();
+
+ServiceWorkerRegistration.register();
 
 // const store = createStore(rootRaducers);
 const store = configureStore({
@@ -111,5 +111,5 @@ window.addEventListener("beforeinstallprompt", (e) => {
 });
 //----------------------service workbox--------------------------------------------
 
-export { rejester }; 
+
 reportWebVitals();
