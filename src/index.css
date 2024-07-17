@@ -1,13 +1,88 @@
-body {
+/*reset code*/
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  direction: rtl;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  background: rgb(246, 245, 245);
+}
+.input-search {
+  width: 300px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 10px;
+  box-shadow: 4px 4px 6px 3px rgb(209, 206, 206) inset;
+}
+.card {
+  margin-bottom: 30px;
+}
+.card:hover {
+  box-shadow: 4px 4px 6px 6px rgb(212, 211, 211) ;
+}
+.des {
+  color:rgb(111, 110, 114);
+}
+.des-item{
+  margin-top: 10px;
+  background-color: rgb(226, 222, 222);
+
+}
+.footer {
+  background-color: rgb(147, 147, 191);
+  position: fixed; /* change from relative to fixed */
+  bottom: 0;
+  width: 100%; /* add this to make the footer full-width */
+  height:30px; /* adjust the height to your liking */
+  z-index: 1; /* add this to ensure the footer is on top of other elements */
+
+}
+
+.btn-counter,.detail-link {
+  text-decoration: none;
+  margin-left: 20px;
+  color:rgb(255, 230, 2);
+}
+.detail-link:hover {
+   color:rgb(69, 2, 255);
+}
+.input-adduser{
+  width: 300px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 10px;
+  box-shadow: 4px 4px 6px 3px rgb(209, 206, 206) inset;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.input-adduser2{
+  width: 200px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 10px;
+  box-shadow: 4px 4px 6px 3px rgb(209, 206, 206) inset;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#install_banner {
+  position: fixed;
+  bottom:35px;
+  width: 100% ;
+  box-shadow: -1px -2px 6px 0 rgba(0,0,0,0.3);
+  padding: 6px;
+  z-index: 99999;
+  background-color: rgba(254,254,254,0.9);
+  display: none;
 }
